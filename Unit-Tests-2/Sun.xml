@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="d6cf92d6-76c3-4969-9336-6c12629d162c" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Sun" searchProperties="true" timeout="0">
+  <con:settings id="77b4d17c-ccfd-4dd6-8f8b-6002e3b2789e">
+    <con:setting id="6d7c924b-b3b1-476d-9bde-e071bff86636fileName">Sun</con:setting>
+    <con:setting id="d6cf92d6-76c3-4969-9336-6c12629d162cfileName">Sun</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="190d9bc9-a5ab-4056-a91a-470969a8712d">
+    <con:settings/>
+    <con:config service="https://api.sunrisesunset.io" resourcePath="/json" methodName="Json" xsi:type="con:RestRequestStep">
+      <con:restRequest name="REST Request" id="69fa3fcc-b0de-4fa7-9c8d-dd8ac32bcf33" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.sunrisesunset.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.sunrisesunset.io/json</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="4ae2a5e1-4f3a-422d-8722-41eeb271bb3d">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="8a7169e6-b673-4909-872c-7107a390b6e3" name="Response SLA">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="date" value="today"/>
+          <con:entry key="lng" value="-71.0598"/>
+          <con:entry key="timezone" value="EST"/>
+          <con:entry key="lat" value="42.3584"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>lat</con:entry>
+          <con:entry>lng</con:entry>
+          <con:entry>timezone</con:entry>
+          <con:entry>date</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="e2f56d49-1fee-4eca-8ff9-d44226066985">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="e2f56d49-1fee-4eca-8ff9-d44226066985">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/data/2.5/weather" method="GET" resourcePath="/data/2.5/weather" id="7bab8663-655f-49f2-ac80-33ffa0c6e2ac">
+  <con:settings id="03cb3b49-9c1b-4680-8593-fffbfa1fd377">
+    <con:setting id="7bab8663-655f-49f2-ac80-33ffa0c6e2acfileName">%2Fdata%2F2.5%2Fweather</con:setting>
+  </con:settings>
+  <con:defaultResponse>Dynamic Response</con:defaultResponse>
+  <con:dispatchStyle>PARAMETER</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>q=Paris&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>q</con:parameterName>
+        <con:parameterValue>Paris</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>appid</con:parameterName>
+        <con:parameterValue>85c705dd76051cb3d8e5540b300279d4</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For q=Paris&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:responseName>
+    </con:ParameterDispatcherRule>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>q=Beijing&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>q</con:parameterName>
+        <con:parameterValue>Beijing</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>appid</con:parameterName>
+        <con:parameterValue>85c705dd76051cb3d8e5540b300279d4</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For q=Beijing&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:responseName>
+    </con:ParameterDispatcherRule>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>q=New%20York%20City&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>q</con:parameterName>
+        <con:parameterValue>New York City</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>appid</con:parameterName>
+        <con:parameterValue>85c705dd76051cb3d8e5540b300279d4</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For q=New%20York%20City&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:responseName>
+    </con:ParameterDispatcherRule>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>q=Istanbul&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>q</con:parameterName>
+        <con:parameterValue>Istanbul</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>appid</con:parameterName>
+        <con:parameterValue>85c705dd76051cb3d8e5540b300279d4</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For q=Istanbul&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:responseName>
+    </con:ParameterDispatcherRule>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>q=Sao%20Paulo&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>q</con:parameterName>
+        <con:parameterValue>Sao Paulo</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>appid</con:parameterName>
+        <con:parameterValue>85c705dd76051cb3d8e5540b300279d4</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:responseName>For q=Sao%20Paulo&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=</con:responseName>
+    </con:ParameterDispatcherRule>
+  </con:parameterDispatcherRuleContainer>
+  <con:routeEnabled>false</con:routeEnabled>
+  <con:conditionalRoutingEnabled>false</con:conditionalRoutingEnabled>
+  <con:routeScript/>
+  <con:saveRoutedResponse>false</con:saveRoutedResponse>
+  <con:response name="Dynamic Response" id="e1a78fcd-331a-4996-9ca3-f5578057ca4c" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:script>//Read in excel libraries
+import org.apache.poi.ss.usermodel.*
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+
+//================================================================//
+//Part 1. Read in request parameters. 
+//================================================================//
+
+// Get the query string of the request, isolate the "q" parameter
+// In this example, the request string looks like: "q=CityName&amp;apikey=abc1234"
+def inputString = mockRequest.getRequest().getQueryString()
+def q = null
+//split query string
+def keyValuePairs = inputString.split("&amp;")
+keyValuePairs.each { pair ->
+    def key = pair.split("=")[0]
+    def value = pair.split("=")[1]
+    if (key == "q") {
+        q = value
+    }
+}
+
+//================================================================//
+//Part 2. Open Workbook. Scan for row of data 
+//================================================================//
+
+// Specify the path to your Excel file
+def filePath = "C:\AT_RAPI\openweatherexport_6-23\top50.xlsx"
+// Specify the value to search in the first column
+def searchValue = q
+
+// Load the Excel file
+def file = new File(filePath)
+def workbook = new XSSFWorkbook(file)
+
+// Assuming the data is in the first sheet, you can change the sheet index if needed
+def sheet = workbook.getSheetAt(0)
+
+// Find the row with the matching search value
+def matchedRow = null
+
+for (Row row : sheet) {
+    def cellValue = row.getCell(0)?.toString()
+    if (cellValue == searchValue) {
+        matchedRow = row
+        break
+    }
+}
+
+//================================================================//
+//Part 3. Map cells of the row to response variables. Close workbook.
+//================================================================//
+if (matchedRow != null) {
+    for (Cell cell : matchedRow) {
+        int columnIndex = cell.getColumnIndex()
+        switch (columnIndex) {
+            case 0:
+                requestContext.cityCell = cell.toString()
+                break
+            case 1:
+                requestContext.countryCell = cell.toString()
+                break
+            case 2:
+               requestContext.abbrCell = cell.toString()
+                break
+            default:
+                break
+        }
+}
+}else {
+    //Do Something 
+}
+
+// Close the workbook
+workbook.close()</con:script>
+    <con:responseContent>{
+  "Response": "Dynamic Response",
+  "Location":"${cityCell}",
+  "Country" : "${countryCell}",
+  "Country Code" : "${abbrCell}"
+}</con:responseContent>
+  </con:response>
+  <con:response name="For q=Paris&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=" id="74ca525a-29a6-448c-b0a8-ace5a7a90f27" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"coord":{"lon":2.3488,"lat":48.8534},"weather":[{"id":803,"main":"Clouds","description":"This is a virtual response","icon":"04n"}],"base":"stations","main":{"temp":285.33,"feels_like":284.74,"temp_min":284.24,"temp_max":286.36,"pressure":1020,"humidity":82},"visibility":10000,"wind":{"speed":5.66,"deg":90},"clouds":{"all":75},"dt":1681845017,"sys":{"type":2,"id":2041230,"country":"FR","sunrise":1681793671,"sunset":1681843508},"timezone":7200,"id":2988507,"name":"Paris","cod":200}</con:responseContent>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>openresty</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>GET, POST</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Cache-Key</con:name>
+      <con:value>/data/2.5/weather?q=paris&amp;units=</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Tue, 18 Apr 2023 19:11:15 GMT</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="For q=Beijing&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=" id="05e580af-05c6-42d4-b778-52e761a13ce1" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"coord":{"lon":116.3972,"lat":39.9075},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02n"}],"base":"stations","main":{"temp":282.09,"feels_like":281.22,"temp_min":282.09,"temp_max":282.09,"pressure":1010,"humidity":43,"sea_level":1010,"grnd_level":1004},"visibility":10000,"wind":{"speed":1.87,"deg":100,"gust":2.35},"clouds":{"all":15},"dt":1681845075,"sys":{"type":1,"id":9609,"country":"CN","sunrise":1681853504,"sunset":1681901713},"timezone":28800,"id":1816670,"name":"Beijing","cod":200}</con:responseContent>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>openresty</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>GET, POST</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Cache-Key</con:name>
+      <con:value>/data/2.5/weather?q=beijing&amp;units=</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Tue, 18 Apr 2023 19:11:15 GMT</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="For q=New%20York%20City&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=" id="74e6cb6e-6158-43b0-9727-dd0e2fd09737" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"coord":{"lon":-74.006,"lat":40.7143},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main":{"temp":286.01,"feels_like":284.47,"temp_min":283.9,"temp_max":287.75,"pressure":1008,"humidity":43},"visibility":10000,"wind":{"speed":10.8,"deg":260,"gust":15.95},"clouds":{"all":75},"dt":1681845001,"sys":{"type":2,"id":2008101,"country":"US","sunrise":1681812774,"sunset":1681861049},"timezone":-14400,"id":5128581,"name":"New York","cod":200}</con:responseContent>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>openresty</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>GET, POST</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Cache-Key</con:name>
+      <con:value>/data/2.5/weather?q=new%20york%20city&amp;units=</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Tue, 18 Apr 2023 19:11:16 GMT</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="For q=Istanbul&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=" id="d869ba25-a6fa-49e2-93f6-f2630c4f694a" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"coord":{"lon":28.9833,"lat":41.0351},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],"base":"stations","main":{"temp":285.74,"feels_like":285.2,"temp_min":283.74,"temp_max":285.83,"pressure":1011,"humidity":82},"visibility":10000,"wind":{"speed":3.09,"deg":350},"clouds":{"all":75},"dt":1681844927,"sys":{"type":1,"id":6970,"country":"TR","sunrise":1681788055,"sunset":1681836341},"timezone":10800,"id":745042,"name":"Istanbul","cod":200}</con:responseContent>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>openresty</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>GET, POST</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Cache-Key</con:name>
+      <con:value>/data/2.5/weather?q=istanbul&amp;units=</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Tue, 18 Apr 2023 19:11:16 GMT</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="For q=Sao%20Paulo&amp;appid=85c705dd76051cb3d8e5540b300279d4&amp;units=" id="301dca8e-1470-4363-affc-3e6b142fbc55" httpResponseStatus="200" mediaType="application/json" encoding="utf-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200035a000a636f6d707265737365644c000b636f6d7072657373696f6e74003d4c636f6d2f657669776172652f736f617075692f696d706c2f737570706f72742f436f6d7072657373656456616c756524436f6d7072657373696f6e3b5b0004646174617400025b427870007e72003b636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c756524436f6d7072657373696f6e00000000000000001200007872000e6a6176612e6c616e672e456e756d000000000000000012000078707400044e4f4e4570" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"coord":{"lon":-46.6361,"lat":-23.5475},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main":{"temp":296.26,"feels_like":296.85,"temp_min":296.09,"temp_max":296.35,"pressure":1005,"humidity":85},"visibility":10000,"wind":{"speed":4.12,"deg":340},"clouds":{"all":75},"dt":1681845016,"sys":{"type":2,"id":2033898,"country":"BR","sunrise":1681809663,"sunset":1681851025},"timezone":-10800,"id":3448439,"name":"SÃ£o Paulo","cod":200}</con:responseContent>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>openresty</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>*</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>GET, POST</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Cache-Key</con:name>
+      <con:value>/data/2.5/weather?q=sao%20paulo&amp;units=</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Tue, 18 Apr 2023 19:11:16 GMT</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>
