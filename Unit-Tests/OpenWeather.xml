@@ -30,9 +30,8 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="q" value="Moscow"/>
+          <con:entry key="q" value="New York City"/>
           <con:entry key="appid" value="${#Project#API_password}"/>
-          <con:entry key="units" value=""/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>q</con:entry>
@@ -48,6 +47,35 @@
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="Property Transfer" id="21b726ba-f14c-4044-a3a1-0cafaee77c0f">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>lat</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>REST Request</con:sourceStep>
+        <con:sourcePath>$['coord']['lat']</con:sourcePath>
+        <con:targetType>latitude</con:targetType>
+        <con:targetStep>#Project#</con:targetStep>
+        <con:targetPath/>
+        <con:type>JSONPATH</con:type>
+        <con:targetTransferType>JSONPATH</con:targetTransferType>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>long</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>REST Request</con:sourceStep>
+        <con:sourcePath>$['coord']['lon']</con:sourcePath>
+        <con:targetType>longitude</con:targetType>
+        <con:targetStep>#Project#</con:targetStep>
+        <con:targetPath/>
+        <con:type>JSONPATH</con:type>
+        <con:targetTransferType>JSONPATH</con:targetTransferType>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
     </con:config>
   </con:testStep>
   <con:properties/>

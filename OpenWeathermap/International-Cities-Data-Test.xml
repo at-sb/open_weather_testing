@@ -9,15 +9,28 @@
     <con:setting id="IncludeCoverage">true</con:setting>
   </con:settings>
   <con:testStep type="datasource" name="Data Source" id="7df171e2-dace-493d-8e44-a4ea9ae199bb">
-    <con:settings/>
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
+    </con:settings>
     <con:config xsi:type="con:DataSourceStep">
-      <con:dataSource type="Excel">
+      <con:dataSource type="Data Generator">
         <con:configuration>
-          <file>InternationalCities.xlsx</file>
-          <worksheet/>
-          <cell>A1</cell>
-          <ignoreEmpty>false</ignoreEmpty>
-          <evaluateFormulas>false</evaluateFormulas>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>2</generatorsTotalNumber>
+          <lastSelectedProperty>0</lastSelectedProperty>
+          <GeneratorType0>CITY</GeneratorType0>
+          <PropertyName0>City</PropertyName0>
+          <repetitionCountCity>0</repetitionCountCity>
+          <repeatValuesCity>false</repeatValuesCity>
+          <GeneratorType1>INT</GeneratorType1>
+          <PropertyName1>Country</PropertyName1>
+          <repetitionCountCountry>0</repetitionCountCountry>
+          <repeatValuesCountry>false</repeatValuesCountry>
+          <IntegerDataGeneratorMinValueCountry>10</IntegerDataGeneratorMinValueCountry>
+          <IntegerDataGeneratorMaxValueCountry>50</IntegerDataGeneratorMaxValueCountry>
+          <IntegerDataGeneratorStepValueCountry>1</IntegerDataGeneratorStepValueCountry>
+          <IntegerDataGeneratorConsequentValuesCountry>false</IntegerDataGeneratorConsequentValuesCountry>
+          <escapeSpaceSequence/>
         </con:configuration>
       </con:dataSource>
       <con:shared>true</con:shared>
@@ -56,24 +69,15 @@
             <SLA>200</SLA>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="JsonPath Match" id="0f1c8125-963c-4c0d-8f22-256d3a2e122c" name="Match content of [country]">
-          <con:configuration>
-            <path>$['sys']['country']</path>
-            <content>${Data Source#Country}</content>
-            <allowWildcards>false</allowWildcards>
-            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-            <ignoreComments>false</ignoreComments>
-          </con:configuration>
-        </con:assertion>
         <con:credentials>
-          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="q" value="Miami"/>
-          <con:entry key="appid" value=""/>
-          <con:entry key="units" value=""/>
+          <con:entry key="q" value="${Data Source#City}"/>
+          <con:entry key="appid" value="${#Project#API_password}"/>
+          <con:entry key="units" value="imperial"/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>q</con:entry>
@@ -89,12 +93,6 @@
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="delay" name="Delay" id="604c9d0f-8ea6-446e-b129-f6deef621784">
-    <con:settings/>
-    <con:config>
-      <delay>300</delay>
     </con:config>
   </con:testStep>
   <con:testStep type="datasourceloop" name="Data Source Loop" id="262352e7-46a6-439b-8f50-a810ccc5d89d">

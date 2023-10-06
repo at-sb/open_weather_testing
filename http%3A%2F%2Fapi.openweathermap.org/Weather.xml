@@ -62,7 +62,7 @@
       <con:params/>
       <con:element>data</con:element>
     </con:representation>
-    <con:request name="Request 1" id="b478602c-2d3d-460d-8c4a-1a1d974eaa9c" mediaType="application/json">
+    <con:request name="Request 1" id="b478602c-2d3d-460d-8c4a-1a1d974eaa9c" mediaType="application/json" postQueryString="false">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>
@@ -70,14 +70,16 @@
       <con:request/>
       <con:originalUri>http://api.openweathermap.org/data/2.5/weather</con:originalUri>
       <con:credentials>
-        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-        <con:authType>No Authorization</con:authType>
+        <con:selectedAuthProfile>NTLM</con:selectedAuthProfile>
+        <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+        <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
+        <con:authType>NTLM</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters>
         <con:entry key="q" value="Boston"/>
         <con:entry key="appid" value="${#Project#API_password}"/>
-        <con:entry key="units" value=""/>
+        <con:entry key="units" value="imperial"/>
       </con:parameters>
       <con:parameterOrder>
         <con:entry>q</con:entry>

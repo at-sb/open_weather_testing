@@ -7,7 +7,6 @@
   <con:endpoints>
     <con:endpoint>http://api.openweathermap.org</con:endpoint>
     <con:endpoint>http://api.openweathermap.org/data/2.5/weather?q=Ottawa&amp;appid=85c705dd76051cb3d8e5540b300279d4</con:endpoint>
-    <con:endpoint>http://localhost:8092/</con:endpoint>
   </con:endpoints>
   <con:environmentSpec>
     <con:entry environmentId="Default">
